@@ -40,7 +40,10 @@
 
 /*---------------------------------------------------Special paddings margin/text */
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -63,7 +66,7 @@ h1,h2,h3,h4 {
     display: table;
 }
 
-.section-column { 
+.section-column {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
@@ -116,19 +119,23 @@ header {
     margin-bottom: 90px;
 }
 
-.list-inline-item:not(:last-child) { /* This cancels margins between the list items */
-    margin:0;
+.list-inline-item:not(:last-child) {
+    /* This cancels margins between the list items */
+    margin: 0;
 }
 
-.menucontainer {  /* This cancells the margin between the left of the photo and the start of the list , However makes all the fonts small so has to be fixed by adding font size to its child elements */
+.menucontainer {
+    /* This cancells the margin between the left of the photo and the start of the list , However makes all the fonts small so has to be fixed by adding font size to its child elements */
     font-size: 0;
 }
 
 #nav {
-    margin: 0;   /* This cancels bottom margin between the photo and the list */
+    margin: 0;
+    /* This cancels bottom margin between the photo and the list */
 }
 
-#nav li { /* This is a fix for menu contaienr font size 0 */
+#nav li {
+    /* This is a fix for menu contaienr font size 0 */
     font-size: 14px;
     padding: 0;
 }
@@ -143,7 +150,7 @@ header {
     width: 100%;
     text-decoration: none;
     color: #fff;
-    height: 120px; 
+    height: 120px;
 }
 
 .menuitem a i {
@@ -192,7 +199,8 @@ footer {
     text-align: center;
     padding-left: 5px;
     transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out; /* This is for Mozilla webkit browsers and opera*/
+    -moz-transition: all 0.35s ease-in-out;
+    /* This is for Mozilla webkit browsers and opera*/
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
@@ -216,7 +224,8 @@ footer {
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
-    -moz-transition: all 0.35s ease-in-out; /* This is for Mozilla webkit browsers and opera*/
+    -moz-transition: all 0.35s ease-in-out;
+    /* This is for Mozilla webkit browsers and opera*/
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
@@ -290,13 +299,15 @@ footer {
     position: absolute;
     left: 0px;
     font-weight: 400;
-    padding: 3px 30px 2px 10px;  /* Top Right Bottom Left */
+    padding: 3px 30px 2px 10px;
+    /* Top Right Bottom Left */
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
 }
 
 .progress-section {
-    margin: 40px 20px; /* 40px top and bott , 20px left right */
+    margin: 40px 20px;
+    /* 40px top and bott , 20px left right */
 }
 
 /*--------------------------------------------------- Work History */
@@ -358,7 +369,8 @@ footer {
 
 .center-form {
     padding-top: 10px;
-    margin: 0 auto; /* 0 top bottom center left right */
+    margin: 0 auto;
+    /* 0 top bottom center left right */
     max-width: 70%;
 }
 
@@ -372,7 +384,9 @@ button[type="submit"] {
 
 /*--------------------------------------------------- Media Queries */
 
-@media(min-width: 992px) { /* applies to screens larger than 992 px ) */
+@media(min-width: 992px) {
+
+    /* applies to screens larger than 992 px ) */
     .center-form {
         padding-top: 30px;
         min-height: 240px;
@@ -382,9 +396,50 @@ button[type="submit"] {
 
 }
 
-@media(max-width: 700px) {
+@media(max-width: 750px) {
     .bg-color-name-title {
-        background-color: #f4f4f4;
-        background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d)
+        background-color: #292e49;
+    }
+
+    .logo {
+        background: url(../images/profile.jpg);
+        min-height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        background-color: #292e49;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        display: inline-block;
+        border: 2px solid #fff;
+        margin: 10px;
+        position: absolute;
+        left: 150px;
+
+    }
+
+    .circle {
+        min-height: 250px;
+        min-width: 300px;
+        display: inline-block;
+        background-color: #292e49;
+        position: relative;
+    }
+
+    .heading {
+        margin-left: 0;
+    }
+
+    .name {
+        margin: 0;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .title {
+        display: none;
     }
 }
