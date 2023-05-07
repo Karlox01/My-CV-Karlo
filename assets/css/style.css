@@ -11,7 +11,7 @@
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
-    background: linear-gradient(to bottom, #bbd2c5, #536976, #292e49);
+    background: linear-gradient(to bottom, #fff, #536976, #292e49);
 }
 
 .ui-menu-color-home {
@@ -79,6 +79,9 @@ h4 {
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline 4px solid #e67e22;
+    text-underline-offset: 15px;
 }
 
 /*---------------------------------------------------Heading */
@@ -91,16 +94,33 @@ header {
     margin-left: 50px;
 }
 
+.circle {
+    min-height: 250px;
+    min-width: 300px;
+    display: inline-block;
+    background-color: #292e49;
+    position: relative;
+}
+
 .logo {
     background: url(../images/profile.jpg);
-    background-color: #bbd2c5;
-    background-position: center center;
+    min-height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: #292e49;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 360px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+    display: inline-block;
+    border: 2px solid #e67e22;
+    margin: 10px;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+
 }
 
 .name {
@@ -418,6 +438,7 @@ button[type="submit"] {
         margin: 10px;
         position: absolute;
         left: 150px;
+        top: 20px;
 
     }
 
