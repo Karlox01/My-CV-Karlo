@@ -66,6 +66,7 @@ h4 {
     display: table;
 }
 
+
 .section-column {
     display: table-cell;
     padding: 0 30px 30px;
@@ -82,6 +83,18 @@ h4 {
     text-align: center;
     text-decoration: underline 2px solid #e67e22;
     text-underline-offset: 15px;
+}
+
+#myBtn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;s
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /*---------------------------------------------------Heading */
@@ -259,6 +272,13 @@ footer {
     padding: 20px;
 }
 
+.rights {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 10px;
+    color: #e67e22;
+}
+
 
 
 /*---------------------------------------------------Three reasons */
@@ -270,6 +290,10 @@ footer {
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+#more {
+    display: none;
 }
 
 /*---------------------------------------------------Personal info */
@@ -317,7 +341,7 @@ footer {
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.4);
-    
+
 }
 
 .history-text {
@@ -492,5 +516,5 @@ button[type="submit"] {
         margin: 0 auto;
         margin-bottom: 10px;
         padding-left: 10px;
-        
+
     }
