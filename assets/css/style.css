@@ -85,12 +85,13 @@ h4 {
     text-underline-offset: 15px;
 }
 
-#myBtn {
+.myBtn {
     background-color: #4CAF50;
+    border-radius: 5px;
     /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 12px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -98,6 +99,7 @@ h4 {
     margin-bottom: 10px;
     font-family: 'Kanit', sans-serif;
 }
+
 
 /*---------------------------------------------------Heading */
 
@@ -295,6 +297,10 @@ footer {
 }
 
 #more {
+    display: none;
+}
+
+#more-second {
     display: none;
 }
 
@@ -520,3 +526,4 @@ button[type="submit"] {
         padding-left: 10px;
 
     }
+}
