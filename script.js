@@ -1,4 +1,4 @@
-function myFunction() {
+/* function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.querySelector(".myBtn");
@@ -29,3 +29,28 @@ function myFunctionTwo() {
     moreTwo.style.display = "inline";
   }
 }
+Previous functions , Now made one to cover them all.
+*/
+
+
+function myFunction(skill) {
+  var dots = document.querySelector(`.cardica[data-history="${skill}"] .dots`);
+  var moreText = document.querySelector(`.cardica[data-history="${skill}"] .more`);
+  var btnText = document.querySelector(`.cardica[data-history="${skill}"] .myBtn`);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+
+
+
