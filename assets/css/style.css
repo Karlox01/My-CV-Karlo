@@ -155,7 +155,7 @@ header {
 
 .title {
     font-family: 'Abel', sans-serif;
-    color: black;
+    color: #F7C331;
     font-weight: 100;
     font-size: 12px;
     margin-top: 10px;
@@ -573,7 +573,7 @@ button[type="submit"] {
 
     .title {
         font-family: 'Abel', sans-serif;
-        color: black;
+        color: #F7C331;
         font-weight: 200;
         font-size: 12px;
         margin: 0 auto;
