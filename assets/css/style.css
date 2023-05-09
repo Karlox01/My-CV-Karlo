@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 /*---------------------------------------------------Colours */
 .bg-color-name-title {
-    background-color: #292e49;
+    background-color: #12343b;
 }
 
 .bg-color-three-reasons {
@@ -10,20 +11,19 @@
 }
 
 .bg-color-personal-info {
-    background-color: #f4f4f4;
-    background: linear-gradient(to bottom, #fff, #536976, #292e49);
+    background: #393f4d;
 }
 
 .ui-menu-color-home {
-    background-color: #e67e22;
+    background-color: #393f4d;
 }
 
 .ui-menu-color-resume {
-    background-color: #9b59b6;
+    background-color: #F7C331;
 }
 
 .ui-menu-color-contact {
-    background-color: #3498db;
+    background-color: #6B7A8F;
 }
 
 .ui-menu-color-download {
@@ -31,7 +31,7 @@
 }
 
 .bg-color-work-history {
-    background: #9b59b6;
+    background: #F7C331;
 }
 
 .bg-color-contact {
@@ -81,8 +81,13 @@ h4 {
     margin-top: 25px;
     margin-bottom: 40px;
     text-align: center;
-    text-decoration: underline 2px solid #ffc87c;
     text-underline-offset: 15px;
+}
+
+
+.personal-info-color {
+    border-bottom: 2px solid #feda6a;
+    
 }
 
 .myBtn {
@@ -91,12 +96,12 @@ h4 {
     /* Green */
     border: none;
     color: white;
-    padding: 12px 12px;
+    padding: 4px 18px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -115,7 +120,7 @@ header {
     min-height: 250px;
     min-width: 300px;
     display: inline-block;
-    background-color: #292e49;
+    background-color: #12343b;
     position: relative;
 }
 
@@ -124,7 +129,7 @@ header {
     height: 300px;
     width: 300px;
     border-radius: 100%;
-    background-color: #292e49;
+    background-color: #12343b;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -132,7 +137,7 @@ header {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     display: inline-block;
-    border: 2px solid #e67e22;
+    border: 2px solid #feda6a;
     margin: 10px 0px;
     position: absolute;
     left: 50%;
@@ -145,16 +150,17 @@ header {
     font-weight: 400;
     font-size: 46px;
     margin-top: 50px;
-    color: #e67e22;
+    color: #feda6a;
 }
 
 .title {
-    font-family: 'Kanit', sans-serif;
-    color: #fff;
+    font-family: 'Abel', sans-serif;
+    color: black;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 12px;
     margin-top: 10px;
     margin-bottom: 90px;
+    letter-spacing: 2px;
 }
 
 .list-inline-item:not(:last-child) {
@@ -217,7 +223,7 @@ header {
 
 
 .history-items-color {
-    color: #ffc87c;
+    color: #12343b;
 }
 
 /*---------------------------------------------------Hover.CSS */
@@ -231,7 +237,7 @@ header {
 /*---------------------------------------------------Footer */
 
 footer {
-    background-color: #292e49;
+    background-color: #12343b;
     color: #fafafa;
     min-height: 120px;
 }
@@ -313,13 +319,15 @@ footer {
     display: block;
     clear: both;
     font-weight: 100;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Abel', sans-serif;
 }
 
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
     display: inline-block;
+    font-weight: bold;
+    color: black;
 }
 
 .personal-info-item .key p,
@@ -335,31 +343,48 @@ footer {
 }
 
 .personal-info-item .key p {
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
 }
 
 .personal-info-item .value {
     position: relative;
     width: 60%;
     font-weight: 300;
-    background-color: rgba(250, 250, 250, 0.05);
     font-size: 15px;
+    color: #feda6a;
 }
 
 .history {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Abel', sans-serif;
+    font-weight: 500;
+    color: black;
 
 }
 
 .history-text {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-weight: 300;
-    background-color: rgba(250, 250, 250, 0.05);
+    color: #feda6a;
     font-size: 15px;
 
+}
+
+@-webkit-keyframes altrclr {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: green;
+    }
+}
+
+#a {
+    font-size: 22px;
+    color: red;
+    -webkit-animation: altrclr 3s infinite alternate;
+    -webkit-transform: scale(1);
+    display: inline-block;
 }
 
 
@@ -389,21 +414,21 @@ footer {
 /*--------------------------------------------------- Work History */
 
 .history-heading {
-    color: #fafafa;
+    color: #12343b;
     margin-bottom: 50px;
 }
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
-    color: #ffc87c;
+    color: #12343b;
     border-left: 1px solid;
 }
 
 .timeline-item p {
     padding: 0;
     margin: 0;
-    color: #fff;
+    color: #12343b;
 }
 
 .timeline-item:before {
@@ -435,13 +460,27 @@ footer {
     margin-bottom: 30px;
 }
 
+.resume-text {
+    font-family: 'Abel', sans-serif;
+    color: #12343b;
+}
+
 /*--------------------------------------------------- Contact Form */
 
 .contact-heading {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 300;
+    font-family: 'Abel', sans-serif;
+    font-weight: 800;
     margin-top: 25px;
     margin-bottom: 20px;
+    color: #feda6a;
+    letter-spacing: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-heading-two {
+    font-family: 'Abel', sans-seri;
+    color: #feda6a;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .center-form {
@@ -451,11 +490,23 @@ footer {
     max-width: 70%;
 }
 
+.form-control {
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     color: #fafafa;
-    background-color: #e84610;
+    background-color: #525252;
+    font-family: 'Abel', sans-serif;
+}
+
+.image-wall {
+    background: url(../images/image.jpg) center no-repeat;
+    background-size: cover;
 }
 
 
@@ -475,7 +526,7 @@ button[type="submit"] {
 
 @media(max-width: 750px) {
     .bg-color-name-title {
-        background-color: #292e49;
+        background-color: #12343b;
     }
 
     .logo {
@@ -483,7 +534,7 @@ button[type="submit"] {
         height: 200px;
         width: 200px;
         border-radius: 100%;
-        background-color: #292e49;
+        background-color: #12343b;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -491,7 +542,7 @@ button[type="submit"] {
         -moz-transition: all .5s ease-in-out;
         -webkit-transition: all .5s ease-in-out;
         display: inline-block;
-        border: 2px solid #e67e22;
+        border: 2px solid #feda6a;
         margin: 10px 0;
         position: absolute;
         left: 50%;
@@ -504,7 +555,7 @@ button[type="submit"] {
         height: 215px;
         min-width: 215px;
         display: inline-block;
-        background-color: #292e49;
+        background-color: #12343b;
         position: relative;
     }
 
@@ -520,13 +571,15 @@ button[type="submit"] {
     }
 
     .title {
-        font-family: 'Kanit', sans-serif;
-        color: #fff;
-        font-weight: 100;
-        font-size: 18px;
+        font-family: 'Abel', sans-serif;
+        color: black;
+        font-weight: 200;
+        font-size: 12px;
         margin: 0 auto;
         margin-bottom: 10px;
         padding-left: 10px;
+        letter-spacing: normal;
+        text-align: center;
 
     }
 }
