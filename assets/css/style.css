@@ -120,7 +120,8 @@ header {
     min-height: 250px;
     min-width: 300px;
     display: inline-block;
-    background-color: #393f4d;
+    background: url(../images/image_two.jpg) no-repeat center center;
+    background-size: ;
     position: relative;
 }
 
