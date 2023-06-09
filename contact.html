@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("PB47RKBdtDK687oJU");
+        })();
+    </script>
     <title>Karlo Orlandini</title>
 </head>
 
@@ -28,7 +35,8 @@
                             Karlo Orlandini
                         </h1>
                         <h2 class="title">
-                            Ex shift lead @DATL, Customer relations advisor at HYDRAFORCE LTD / Junior Developer in the making.
+                            Ex shift lead @DATL, Customer relations advisor at HYDRAFORCE LTD / Junior Developer in the
+                            making.
                         </h2>
                     </div>
                 </div>
@@ -50,8 +58,8 @@
                                         aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="assets/cv/CV.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download"
-                                        aria-hidden="true"></i><span>Download</span></a>
+                                <a href="assets/cv/CV.pdf" target="_blank" class="hvr-sweep-to-bottom"><i
+                                        class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
@@ -63,11 +71,11 @@
         <div class="row bg-color-contact">
             <div class="col image-wall">
                 <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
-                <h5 class="uppercase text-center contact-heading-two">Dont be shy, Drop me an email!</h5>
+                <h5 class="uppercase text-center contact-heading-two">Drop me an email!</h5>
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
+                        <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email"
                             required />
                         <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
                             placeholder="Project description" required></textarea>
@@ -147,6 +155,7 @@
         </div>
 
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
